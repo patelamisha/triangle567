@@ -4,7 +4,7 @@
 import unittest
 from Triangle import classifyTriangle
 class TestTriangles(unittest.TestCase):
-    # define multiple sets of tests as functions with names that begin
+    """These test functions defines triangle types"""
     def testRightTriangleA(self): 
         self.assertEqual(classifyTriangle(3,4,5),'Right')
 
@@ -12,7 +12,7 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(5,4,3),'Right')
 
     def testEquilateralTriangles(self):         
-        self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
+        self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should equilateral')
     
     def testIsocelesTriangleA(self): 
         self.assertEqual(classifyTriangle(4, 4, 2),'Isosceles')
